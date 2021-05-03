@@ -1,0 +1,46 @@
+
+Fit Group(
+	Bivariate(
+		Y( :Removal ),
+		X( :OD ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	Bivariate(
+		Y( :Removal ),
+		X( :ID ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	<<{Arrange in Rows( 2 )},
+	SendToReport(
+		Dispatch( {}, "Fit Group", OutlineBox, {Set Title( "Fit Group" )} )
+	)
+);
+
+Fit Group(
+	Bivariate(
+		Y( :Removal ),
+		X( :OD ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	Bivariate(
+		Y( :Removal ),
+		X( :ID ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	<<{Arrange in Rows( 2 )},
+	SendToReport(
+		Dispatch( {}, "Fit Group", OutlineBox, {Set Title( "Fit Group" )} )
+	)
+);

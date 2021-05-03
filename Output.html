@@ -1,0 +1,121 @@
+<!doctype html public "-//W3C//DTD HTML 4.0//EN">
+<html><head><title>
+JMP Report
+</title><style>
+body { font-family: Arial, sans-serif; font-size: 12px; padding: 0; margin: 10px; }
+table { border-color: #a9a9a9; border-collapse: collapse; }
+td,th { border-color: #a9a9a9; }
+img { border: 1px solid #a9a9a9; }
+h1,h2,h3,h4,h5 { padding: 0; margin: 5px 0px; }
+</style>
+</head><body>
+
+<h2>Fit Group</h2>
+<span style="font-size:13pt">Fit Group(
+	Bivariate(
+		Y( :Removal ),
+		X( :OD ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	Bivariate(
+		Y( :Removal ),
+		X( :ID ),
+		Fit Line(
+			{Confid Curves Fit( 1 ), Confid Curves Indiv( 1 ),
+			Line Color( {212, 73, 88} )}
+		)
+	),
+	&lt;&lt;{Arrange in Rows( 2 )},
+	SendToReport(
+		Dispatch( {}, &quot;Fit Group&quot;, OutlineBox, {Set Title( &quot;Fit Group&quot; )} )
+	)
+)</span><br>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td align=left style="vertical-align:top">
+<h3>Bivariate Fit of Removal By OD</h3>
+<img src="gfx/image37028255508eMTmG.png" width=383 height=294><br>
+<br>
+<br>
+<img src="gfx/image3702825551sSwjnj.png" width=96 height=26><br>
+<br>
+<br>
+
+<h4>Linear Fit</h4>
+<span style="font-size:13pt">Removal = 4.0989349 + 0.5283959*OD</span><br>
+
+<h5>Summary of Fit</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><td style="text-align:left">RSquare</td><td>0.840461</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">RSquare Adj</td><td>0.837137</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Root Mean Square Error</td><td>1.123915</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Mean of Response</td><td>11.26504</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Observations (or Sum Wgts)</td><td>50</td></tr>
+</table><br>
+<br>
+
+<h5>Analysis of Variance</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><th bgcolor=#D9D9D9 align=left>Source</th><th bgcolor=#D9D9D9>DF</th><th bgcolor=#D9D9D9>Sum of Squares</th><th bgcolor=#D9D9D9>Mean Square</th><th bgcolor=#D9D9D9>F Ratio</th></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Model</td><td>1</td><td>319.41789</td><td>319.418</td><td>252.8671</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Error</td><td>48</td><td>60.63288</td><td>1.263</td><td><b>Prob &gt; F</b></td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">C. Total</td><td>49</td><td>380.05077</td><td></td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+</table><br>
+
+<h5>Parameter Estimates</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><th bgcolor=#D9D9D9 align=left>Term</th><th bgcolor=#D9D9D9>Estimate</th><th bgcolor=#D9D9D9>Std Error</th><th bgcolor=#D9D9D9>t Ratio</th><th bgcolor=#D9D9D9>Prob&gt;|t|</th></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Intercept</td><td>4.0989349</td><td>0.477857</td><td>8.58</td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">OD</td><td>0.5283959</td><td>0.033229</td><td>15.90</td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+</table>
+</td>
+<td align=left style="vertical-align:top">
+<h3>Bivariate Fit of Removal By ID</h3>
+<img src="gfx/image37028255527OV36e.png" width=383 height=294><br>
+<br>
+<br>
+<img src="gfx/image3702825553jrG42C.png" width=96 height=26><br>
+<br>
+<br>
+
+<h4>Linear Fit</h4>
+<span style="font-size:13pt">Removal = 4.4769092 + 0.6500796*ID</span><br>
+
+<h5>Summary of Fit</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><td style="text-align:left">RSquare</td><td>0.635112</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">RSquare Adj</td><td>0.627511</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Root Mean Square Error</td><td>1.699729</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Mean of Response</td><td>11.26504</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Observations (or Sum Wgts)</td><td>50</td></tr>
+</table><br>
+<br>
+
+<h5>Analysis of Variance</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><th bgcolor=#D9D9D9 align=left>Source</th><th bgcolor=#D9D9D9>DF</th><th bgcolor=#D9D9D9>Sum of Squares</th><th bgcolor=#D9D9D9>Mean Square</th><th bgcolor=#D9D9D9>F Ratio</th></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Model</td><td>1</td><td>241.37494</td><td>241.375</td><td>83.5473</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Error</td><td>48</td><td>138.67583</td><td>2.889</td><td><b>Prob &gt; F</b></td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">C. Total</td><td>49</td><td>380.05077</td><td></td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+</table><br>
+
+<h5>Parameter Estimates</h5>
+
+<table border=1 cellpadding=2 cellspacing=1>
+<tr style="vertical-align:top" align=right><th bgcolor=#D9D9D9 align=left>Term</th><th bgcolor=#D9D9D9>Estimate</th><th bgcolor=#D9D9D9>Std Error</th><th bgcolor=#D9D9D9>t Ratio</th><th bgcolor=#D9D9D9>Prob&gt;|t|</th></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">Intercept</td><td>4.4769092</td><td>0.780583</td><td>5.74</td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+<tr style="vertical-align:top" align=right><td style="text-align:left">ID</td><td>0.6500796</td><td>0.071121</td><td>9.14</td><td><font COLOR="#e57406">&lt;.0001*</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body></html>
